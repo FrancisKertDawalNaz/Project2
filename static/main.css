@@ -1,0 +1,309 @@
+/* Navbar Styling (if needed) */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-bottom: 3px solid #c0392b;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar .nav-link {
+    color: #333;
+    /* Default text color */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    /* Smooth transition */
+    border-bottom: 2px solid transparent;
+    /* Underline effect */
+}
+
+.navbar .nav-link:hover {
+    color: #c0392b;
+    /* Change text color on hover */
+    border-bottom: 2px solid #c0392b;
+    /* Add underline color */
+}
+
+
+/* Hero Section Styling */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Prevents blur overflow */
+}
+
+/* Blurred background */
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/i8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px); 
+    z-index: -1; 
+}
+
+/* Ensure h1 and p are clear */
+.home h1,
+.home p {
+    position: relative;
+    z-index: 1;
+    color: #a93226;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6), 
+                -2px -2px 4px rgba(255, 255, 255, 0.6), 
+                2px -2px 4px rgba(255, 255, 255, 0.6), 
+                -2px 2px 4px rgba(255, 255, 255, 0.6); 
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.home h1{
+    font-size: 5rem;
+}
+
+
+.main{
+    height: 100vh;
+}
+
+.btn-book-now {
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    font-size: 1rem;
+}
+
+.btn-book-now:hover {
+    background-color: #a93226;
+    border: 2px solid white;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-nav.ms-auto {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    color: #c0392b; 
+    font-weight: bold; 
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #a93226;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Apply full height for each section */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about{
+    height: 100vh;
+}
+.services{
+    height: 100vh;
+}
+.gallery{
+    height: 100vh;
+}
+.testimonial{
+    height: 100vh;
+}
+section .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section .section-description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.testimonial .card-img-top {
+    width: 100px; /* Make the image smaller */
+    height: 100px; /* Make the image smaller */
+    object-fit: cover; /* Ensure the image fits nicely in the circle */
+}
+
+/* Ensure all cards have the same height */
+.testimonial .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: none; /* Optional: Remove card border */
+}
+
+.testimonial .card img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.testimonial .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial .card-title,
+.testimonial .card-subtitle {
+    text-align: center;
+}
+
+.testimonial .card-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.contact{
+    height: 100vh;
+}
+
+.contact .form-label {
+    font-weight: bold;
+}
+
+.contact .btn-primary {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact .section-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer .footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media-links li {
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #007bff;
+}
+
+.footer .text-center p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
