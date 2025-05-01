@@ -21,3 +21,5 @@ Backend: Node.js / PHP / Python / etc.
 Database: MySQL / MongoDB / PostgreSQL
 
 Other Tools: Express.js, Bootstrap, API integrations, etc.
+
+updated version
